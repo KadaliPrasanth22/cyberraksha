@@ -1,0 +1,14 @@
+<nav class="nav-wrap" th:fragment="nav">
+  <a class="brand" th:href="@{/}"><span class="brand-mark">CR</span><span>Cyber<span class="brand-accent">Raksha</span><small th:text="#{app.tagline}">Protect Yourself. Protect Everyone.</small></span></a>
+  <div class="nav-links">
+    <a th:href="@{/}" th:text="#{nav.home}">Home</a>
+    <a th:href="@{/learn}" th:text="#{nav.learn}">Learn</a>
+    <a th:href="@{/games}" th:text="#{nav.games}">Play & Learn</a>
+    <a class="nav-emergency" th:href="@{/emergency}" th:text="#{nav.emergency}">Emergency Help</a>
+  </div>
+  <label class="language-select"><span class="sr-only">Language</span>
+    <select id="languageSelect" aria-label="Choose language">
+      <option value="en">English</option><option value="te">తెలుగు</option><option value="ta">தமிழ்</option><option value="hi">हिन्दी</option><option value="ml">മലയാളം</option><option value="kn">ಕನ್ನಡ</option>
+    </select>
+  </label>
+</nav>
